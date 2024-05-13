@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Luxury Perfume</title>
+  <!-- animation.css -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"> 
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+YjBc/MD0x6ZdYEX/JVgTbgNr/mOZydR+S6xJWUGJf7X8vWf+l9f/" crossorigin="anonymous">
+  <!-- Custom CSS -->
+  <style>
+    body{
+
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    }
+    #hero {
+      /* background-image: url('data:image/jpeg;base64,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'); */
+     background-image: url("holi.jpg");
+      background-size: cover;
+      background-position: center;
+      padding: 100px 0;
+    }
+    #feedback {
+      background-image: url("glafed.jpg");
+        
+      background-size : cover;
+      background-position: center;
+    }
+    #ppt{
+        width: 20rem;
+        height: 20rem;
+        border-radius: 5%;
+    }
+    .perf{
+        width: 22rem;
+        height: 27rem;
+    }
+    .card-img-top{
+
+      width: fit-content;
+    }
+  </style>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-info">
+    <div class="container">
+      <a class="navbar-brand" href="#">Luxury Perfume Boutique</a>
+      <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button> -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#"><strong>HOME</strong></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#products"><strong>PRODUCTS</strong></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">,<strong>ABOUT US</strong></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><strong>CONTACT</strong></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <section id="hero" class="d-flex align-items-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+
+          <h1 class="animate__animated animate__pulse">Welcome to Luxury Perfume Boutique</h1>
+          <p  class="animate__animated animate__pulse animate__delay-2s">Discover the essence of luxury with our exclusive collection of perfumes crafted from the finest ingredients around the world.</p>
+          <a href="#products" class="btn btn-primary">Explore Our Collection</a>
+        </div>
+        <div class="col-md-6 d-none d-md-block">
+          <img   id="ppt" src="blue.jpg" alt="Perfume Shop" class="img-fluid">
+        </div>
+      </div>
+    </div>
+</section>
+
+<section id="products" class="bg-light">
+  <div class="container">
+    <h2 class="text-center mb-4" class="animate__animated animate_fadeInDown">Our Featured Products</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card">
+          <img class="perf" src="one.jpg"
+           class="card-img-top" alt="perfume bottle">
+          <div class="card-body">
+            <h5 class="card-title">Luxury Perfume 1</h5>
+            <p class="card-text">Indulge in the exquisite scent of Luxury Perfume 1, perfect for special occasions.</p>
+            <p class="card-text"><strong>Price:</strong> $100</p>
+            <p class="card-text"><strong>Discount:</strong> 10% off</p>
+            <p class="card-text"><strong>Sale:</strong> Limited time offer!</p>
+            <a href="#" class="btn btn-primary">Buy Now</a>
+          </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card">
+        <img class="perf" src="two.jpg"
+         class="card-img-top" alt="sec img">
+        <div class="card-body">
+          <h5 class="card-title">Luxury Perfume 2</h5>
+          <p class="card-text">Experience the allure of Luxury Perfume 2, a fragrance designed for sophistication.</p>
+          <p class="card-text"><strong>Price:</strong> $120</p>
+          <p class="card-text"><strong>Discount:</strong> 15% off</p>
+          <p class="card-text"><strong>Sale:</strong> Limited time offer!</p>
+          <a href="#" class="btn btn-primary">Buy Now</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card">
+        <img class="perf" 
+        src="three.jpg"
+         class="card-img-top" alt="three ">
+        <div class="card-body">
+            <h5 class="card-title">Luxury Perfume 3</h5>
+            <p class="card-text">Elevate your presence with Luxury Perfume 3, an embodiment of elegance.</p>
+            <p class="card-text"><strong>Price:</strong> $150</p>
+            <p class="card-text"><strong>Discount:</strong> 20% off</p>
+            <p class="card-text"><strong>Sale:</strong> Limited time offer!</p>
+            <a href="#" class="btn btn-primary">Buy Now</a>
+          </div>
+        </div>
+      </div>
+      <!-- -------- -->
+      
+    </div>
+  </div>
+</section>
+
+<section id="feedback" class="bg-dark text-white py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">We'd Love to Hear Your Feedback</h2>
+    <form>
+        <div class="mb-3">
+          <label for="name" class="">Name</label>
+          <input type="text" class="form-control" id="name" placeholder="Enter your name">
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" class="form-control" id="email" placeholder="Enter your email">
+        </div>
+        <div class="mb-3">
+          <label for="feedback" class="form-label">Feedback</label>
+          <textarea class="form-control"  bg-white id="feedback" rows="3" placeholder="Enter your feedback" ></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+</section>
+
+
+<footer class="py-3 my-4 bg-primary" >
+  <!-- <ul class="nav justify-content-center border-bottom pb-3 mb-3 ">
+    <li class="nav-item"><a href="#" class="nav-link px-2 text-white ">Home</a></li>
+    <li class="nav-item"><a href="#" class="nav-link px-2 text-white ">Features</a></li>
+    <li class="nav-item"><a href="#" class="nav-link px-2  text-white">Pricing</a></li>
+    <li class="nav-item"><a href="#" class="nav-link px-2  text-white">FAQs</a></li>
+    <li class="nav-item"><a href="#" class="nav-link px-2  text-white">About</a></li>
+  </ul> -->
+  <p class="text-center text-white">© 2024 Company, Inc</p>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
